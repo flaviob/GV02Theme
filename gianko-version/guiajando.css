@@ -1,0 +1,568 @@
+/* @override http://lisboando.dev/wp-content/themes/guiajando/guiajando.css?ver=4.0.1 */
+/*
+http://material-ui.com/#/css-framework/typography*/
+
+body { font-size: 100%; }
+
+#page {
+	background-color: #f2f2f2;
+}
+
+/* Basado en google material design */
+
+h1,h2,h3,h4,h5,h6{
+	line-height: 1.2;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 45px;
+	line-height: 48px;
+	margin-bottom: 11px;
+	letter-spacing: -1px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+h2 {
+	font-size: 34px;
+	line-height: 40px;
+	padding: 8px 0 0 0 ;
+	margin-bottom: 12px;
+	letter-spacing: -1px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 32px;
+	padding-top: 16px;
+	margin-bottom: 12px;
+	letter-spacing: 0;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 28px;
+	padding-top: 19px;
+	margin-bottom: 13px;
+	letter-spacing: 0;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+h5 {
+	font-size: 15px;
+	line-height: 28px;
+	padding-top: 2px;
+	margin-bottom: 10px;
+	letter-spacing: 0;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 3px;
+	margin-bottom: 13px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+h6 {
+	font-size: 13px;
+	line-height: 24px;
+	padding-top: 4px;
+	margin-bottom: 12px;
+	letter-spacing: 0;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+p {
+	font-size: 15px;
+	line-height: 20px;
+	padding-top: 6px;
+	margin-bottom: .2rem;
+	letter-spacing: 0;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+/* hasta aqui la tipografía */
+
+.site-main {
+	background: #fff;
+	padding-top: 1.5em;
+}
+
+
+#nav_principal h3 {
+	margin: 0;
+	line-height: 1;
+	margin: 0 0 .5em 0 ;
+}
+
+header.page-header {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+h1.site-title.display-logo {
+	width: 90px;
+	margin: 0 20px 10px 0;
+	float: left;
+}
+
+#masthead div.ads {
+	display: inline-block;
+	float: right;
+}
+
+header#masthead.site-header {
+	text-align: center;
+	margin-top: 10px;
+}
+
+a,
+.tabs-style-tzoid nav ul li.current_page_item a,
+.resaltador {
+	color: #de1f0d;
+	font-weight: bold;
+}
+.tabs-style-tzoid nav ul li a::after,
+#commentform input#submit {
+	background: #de1f0d;
+}
+
+#page {padding: 0 0 40px;}
+
+
+.main_nav {
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+
+.current-menu-item.menu-item-has-children .sub-menu,
+.menu-item-has-children.current-menu-ancestor .sub-menu{
+	display: block;
+} 
+.menu-item-has-children ul.sub-menu {
+	display: none;
+	margin: .5em 0 0;
+	padding: 0;
+}
+
+.menu-principal-lateral-container ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.current_page_item > a,
+.current_page_item > a:hover {
+	cursor: default;
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 115%;
+}
+
+
+.main_nav ul li {
+	line-height: 1.2em;
+	position: relative;
+	padding-left: 1.3em;
+	margin: 0 0 .5em;
+	font-size: .95em;
+}
+
+.main_nav ul li.current_page_item::before,
+.main_nav ul li li.current_page_item::before,
+.main_nav ul li::before,
+.main_nav ul li li::before,
+.main_nav ul li li.current_page_item::before {
+	position: absolute;
+	font-family: FontAwesome;
+	top:0;
+	left:-0.05em;
+	color: #777;
+	font-size: 120%;
+}
+
+.main_nav ul li::before {content: "\f061"; color: #ccc; }
+.main_nav ul li li::before {content: "\f054"; font-size: 80%; line-height: 2; left:.5em; color: #ccc;}
+.main_nav ul li.current_page_item::before,
+.main_nav ul li li.current_page_item::before {color: #333; font-size: 115%;}
+
+.main_nav ul li li.current_page_item::before { font-size: 100%;  left:.3em; line-height: 1.3; }
+
+
+.breadcrumb {
+	position: relative;
+	font-size: .8em;
+	line-height: 1;
+	border-bottom: 1px solid #eee;
+	margin:  0 0 .5em;
+	padding: 0 0 .5em;
+}
+.breadcrumb ol {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+.breadcrumb .icon {
+	font-size: 1.2em;
+}
+.breadcrumb li {
+	float: left;
+	line-height: 1;
+}
+.breadcrumb li a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+	padding: 0;
+	text-align: center;
+	margin-right: .4em;
+}
+.breadcrumb li a:after {
+	font-family: FontAwesome;
+	content: "\f054";
+	float: right;
+	font-size: .74em;
+	line-height: 1.9em;
+	margin: 0 0 0 .5em;
+	color: #ccc;
+}
+
+
+
+/*****************************/
+/* Tabs tabs tabs */
+/*****************************/ 
+
+
+.tabs {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 500;
+	font-size: 1em;
+	margin: 1em 0 0;
+}
+
+/* Nav */
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	-ms-box-pack: center;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	overflow: hidden;
+	margin-bottom: -.56em;
+}
+
+.tabs nav ul li {
+	position: relative;
+	z-index: 1;
+	display: block;
+	margin: 0;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.tabs nav a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 2.5;
+}
+
+.tabs nav a span {
+	vertical-align: middle;
+	font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+	color: #74777b;
+}
+
+.tabs nav a:focus {
+	outline: none;
+}
+
+
+/*****************************/
+/* Trapezoid, based on http://lea.verou.me/2013/10/slanted-tabs-with-css-3d-transforms/ */
+/*****************************/ 
+
+.tabs-style-tzoid {
+	max-width: 1200px;
+}
+
+.tabs-style-tzoid nav {
+	padding: 0;
+}
+
+.tabs-style-tzoid nav ul li {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-tzoid nav ul li a {
+	padding: 0 1.5em 0 0.3em;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+@media screen and (max-width: 54em) {
+	.tabs-style-tzoid nav ul li a {
+		padding: 0 0.5em 0 0.3em;
+	}
+}
+
+.tabs-style-tzoid nav ul li a:hover,
+.tabs-style-tzoid nav ul li a:focus {
+	color: #fff;
+}
+
+.tabs-style-tzoid nav ul li.tab-current a,
+.tabs-style-tzoid nav ul li.tab-current a:hover {
+	color: #2CC185;
+}
+
+.tabs-style-tzoid nav ul li a span {
+	font-weight: 500;
+	font-size: 0.75em;
+}
+
+.tabs-style-tzoid nav ul li.current_page_item a {
+	font-weight: bold;
+}
+
+
+.tabs-style-tzoid nav ul li a::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	outline: 1px solid transparent;
+	border-radius: 10px 10px 0 0;
+	box-shadow: inset 0 -3px 3px rgba(0,0,0,0.05);
+	content: '';
+	-webkit-transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+	transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-tzoid nav ul li.current_page_item a::after,
+.tabs-style-tzoid .content-wrap {
+	background: #fff;
+	box-shadow: none;
+}
+
+
+/* Footer */
+
+.contacts {
+	float: left;
+}
+
+#colophon div.container div.site-info img {
+	float: right;
+	width: 90px;
+}
+
+#colophon div.container div.site-info {
+	background: #f2f2f2;
+	border-top: 2px solid #ddd;
+	padding: 1em 0 1.5em;
+}
+
+#colophon div.container div.site-info p {
+	float: right;
+	margin-right: 20px;
+	text-align: right;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+/* GIAN FIXES */
+.site-main {
+  padding-top:0;
+  border-top:10px solid #f2f2f2;
+}
+.site-main-inner {
+  padding-top:1.5em;
+}
+.site-nav-inner {
+  padding-top:0px;
+}
+.tabs-style-tzoid {
+  background:#f2f2f2;
+/*  padding-top: 1em;*/
+  margin-top:0;
+}
+h1.site-title.display-logo {
+    float: left;
+    margin: 0 20px 0px 0;
+    width: 90px;
+}
+
+.site-title.display-logo a {
+    background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    font: 0px/0 a;
+    text-shadow: none;
+}
+.site-title.display-logo img {
+    max-width: 100%;
+}
+h1.site-title.display-logo {
+  margin-bottom:16px;
+}
+#masthead {
+  overflow:hidden;
+  background:#f2f2f2;
+  position: relative;
+  z-index: 10;
+}
+header#masthead.site-header {
+  margin-top:0;
+}
+.tabs-style-tzoid nav ul li a {
+    padding: 0 1.5em 0 0.3em;
+}
+
+#googleadheader {overflow:hidden; margin-bottom:16px}
+
+#googleadheader .adsbygoogle {
+  display:inline-block;width:728px;height:90px
+}
+.breadcrumb, .page-template-page-iframe-php .breadcrumb {padding: 0 40px;}
+
+@media (min-width: 1199px) {
+  .main_nav {
+    margin-top:10em;
+  }
+  .page-template-page-iframe-php .container {    
+    padding: 0 40px;
+  }
+  .breadcrumb {padding: 0 0px;}
+}
+
+h1.site-title.display-logo {
+  margin-left: 16px;
+}
+@media (min-width: 1240px) {
+  h1.site-title.display-logo {
+    margin-left: 0px;
+  }
+
+}
+
+
+@media (max-width: 764px) {
+  header#masthead.site-header {
+      padding-top: 2.5em;
+  }
+  .breadcrumb, .page-template-page-iframe-php .breadcrumb {padding: 0 20px;}
+}
+@media (max-width: 910px) {
+    #googleadheader {
+      width:468px;
+    }
+    #googleadheader .adsbygoogle {
+      display:inline-block;width:468px;height:60px
+    }   
+}
+
+@media (max-width: 610px){
+    #googleadheader {
+      width:320px;
+    }
+    #googleadheader .adsbygoogle {
+      display:inline-block;width:320px;height:50px
+    }
+}
+@media (max-width: 445px){
+    #googleadheader {
+      width:320px;
+      margin: 0 16px 16px;
+    }
+    #googleadheader .adsbygoogle {
+      display:inline-block;width:320px;height:50px
+    }
+}
+.site-actions i.icon-reorder {color: #de1f0d}
+.icon-reorder:hover {color: #fff}
+
+#page {padding-bottom: 0}
+
+
+.page-template-page-iframe-php {}
+.page-template-page-iframe-php .site-nav-inner{
+  display: none;
+}
+.page-template-page-iframe-php .site-main-inner {
+  margin-left: 0
+}
+.page-template-page-iframe-php .show-site-nav {
+  display: none;
+}
+
+
